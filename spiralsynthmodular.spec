@@ -40,7 +40,7 @@ mkdir -p ${RPM_BUILD_ROOT}/{%{_bindir},%{_libdir}}
 %makeinstall
 
 # Mandrake Menu entry
-mkdir -p %{_datadir}/applications/
+mkdir -p %buildroot%{_datadir}/applications/
 cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 [Desktop Entry]
 Encoding=UTF-8
