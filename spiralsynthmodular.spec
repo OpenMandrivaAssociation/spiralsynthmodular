@@ -40,15 +40,16 @@ mkdir -p ${RPM_BUILD_ROOT}/{%{_bindir},%{_libdir}}
 %makeinstall
 
 # Mandrake Menu entry
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat <<EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): \
-needs="x11" \
-section="Multimedia/Sound" \
-title="Spiral Modular Synth" \
-longtitle="Spiral Modular Software Synthesizer" \
-command="/usr/bin/%{name}" \
-icon="%{name}.png"
+mkdir -p %{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Categories=Audio;
+Name=Spiral Modular Synth
+Comment=Spiral Modular Software Synthesizer
+Exec=/usr/bin/%{name}
+Icon=%{name}.png
 EOF
 
 #icons
@@ -73,7 +74,7 @@ cat %SOURCE3 > $RPM_BUILD_ROOT/%_miconsdir/%name.png
 %doc CHANGES COPYING README Examples
 %{_bindir}/spiralsynthmodular
 %{_libdir}/SpiralPlugins
-%{_menudir}/%{name}
+%{_datadir}/applications/mandriva-%{name}.desktop
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
