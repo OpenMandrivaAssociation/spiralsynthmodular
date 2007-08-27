@@ -13,7 +13,7 @@ Patch0:		spiralmodular-fix-build.patch
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-root
-BuildRequires:	fltk-devel jackit-devel 
+BuildRequires:	fltk-devel jackit-devel python-base
 BuildRequires:	ladspa-devel libalsa-devel libsndfile-devel
 Provides:	SpiralSynthModular
 Obsoletes:	SpiralSynthModular
