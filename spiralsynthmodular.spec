@@ -9,6 +9,7 @@ Source0:	%{pkg_name}-%{version}.tar.bz2
 Source1: 	SpiralLogo48.png
 Source2: 	SpiralLogo32.png
 Source3: 	SpiralLogo16.png
+Patch0:		spiralmodular-fix-build.patch
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-root
@@ -27,6 +28,7 @@ effects.
 
 %prep
 %setup -q -n %pkg_name-0.2.2
+%patch0 -p0
 
 %build
 %configure
