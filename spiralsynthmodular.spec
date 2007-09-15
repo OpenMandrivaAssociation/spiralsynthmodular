@@ -48,7 +48,7 @@ Categories=Audio;
 Name=Spiral Modular Synth
 Comment=Spiral Modular Software Synthesizer
 Exec=/usr/bin/%{name}
-Icon=%{name}.png
+Icon=%{name}
 EOF
 
 #icons
