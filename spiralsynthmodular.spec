@@ -10,6 +10,8 @@ Source1: 	SpiralLogo48.png
 Source2: 	SpiralLogo32.png
 Source3: 	SpiralLogo16.png
 Patch0:		spiralmodular-fix-build.patch
+Patch1:		spiralmodular-0.2.2-gcc43.patch
+Patch2:		spiralmodular-0.2.2-newer-fltk.patch
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-root
@@ -29,6 +31,8 @@ effects.
 %prep
 %setup -q -n %pkg_name-0.2.2
 %patch0 -p0
+%patch1 -p0
+%patch2 -p0
 
 %build
 %configure
