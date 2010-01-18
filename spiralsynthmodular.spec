@@ -3,7 +3,7 @@
 Summary:	Object oriented modular softsynth / sequencer / sampler
 Name:		spiralsynthmodular
 Version:	0.2.2a
-Release:	%mkrel 7
+Release:	%mkrel 8
 URL:		http://www.pawfal.org/Software/SSM/
 Source0:	%{pkg_name}-%{version}.tar.bz2
 Source1: 	SpiralLogo48.png
