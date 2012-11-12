@@ -1,0 +1,991 @@
+--- GUI/Widgets/Fl_Canvas.h~	2003-02-17 22:39:54.000000000 +0100
++++ GUI/Widgets/Fl_Canvas.h	2008-12-14 13:49:55.000000000 +0100
+@@ -16,9 +16,9 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ */ 
+ 
+-#include <FL/Fl_Group.h>
+-#include <FL/Fl_Output.h>
+-#include <FL/Fl_Image.h>
++#include <FL/Fl_Group.H>
++#include <FL/Fl_Output.H>
++#include <FL/Fl_Image.H>
+ #include <vector>
+ #include <string>
+ #include "../../GraphSort.h"
+--- GUI/Widgets/Fl_CommentGUI.h~	2003-12-21 19:04:17.000000000 +0100
++++ GUI/Widgets/Fl_CommentGUI.h	2008-12-14 13:49:29.000000000 +0100
+@@ -19,7 +19,7 @@
+ #ifndef COMMENTGUI
+ #define COMMENTGUI
+ 
+-#include <FL/Fl_Input.h>
++#include <FL/Fl_Input.H>
+ #include "Fl_DeviceGUI.h"
+ 
+ class Fl_CommentGUI : public Fl_DeviceGUI
+--- GUI/Widgets/Fl_DeviceGUI.h~	2003-11-30 19:02:52.000000000 +0100
++++ GUI/Widgets/Fl_DeviceGUI.h	2008-12-14 13:49:01.000000000 +0100
+@@ -22,9 +22,9 @@
+ #include <FL/Fl.H>
+ #include <FL/Fl_Group.H>
+ #include <FL/Fl_Button.H>
+-#include <FL/Fl_Pixmap.h>
+-#include <FL/Fl_Menu_Button.h>
+-#include <FL/Fl_Box.h>
++#include <FL/Fl_Pixmap.H>
++#include <FL/Fl_Menu_Button.H>
++#include <FL/Fl_Box.H>
+ #include "Fl_DragBar.H"
+ #include "SpiralGUI.H"
+ #include <iostream>
+--- SpiralSound/Plugins/SpiralPlugin.h~	2004-02-11 19:30:45.000000000 +0100
++++ SpiralSound/Plugins/SpiralPlugin.h	2008-12-14 13:50:30.000000000 +0100
+@@ -24,8 +24,8 @@
+ #include <string>
+ #include <iostream>
+ #include <math.h>
+-#include <FL/Fl.h>
+-#include <FL/Fl_Group.h>
++#include <FL/Fl.H>
++#include <FL/Fl_Group.H>
+ #include "../Sample.h"
+ #include "../ChannelHandler.h"
+ #include "../../GUI/Widgets/SpiralGUI.H"
+--- main.cpp~	2003-08-16 08:16:03.000000000 +0200
++++ main.cpp	2008-12-14 13:48:19.000000000 +0100
+@@ -23,7 +23,7 @@
+ #include <iostream>
+ #include <cstdlib>
+ #include <FL/Fl.H>
+-#include <FL/Fl_Tooltip.h>
++#include <FL/Fl_Tooltip.H>
+ #include <unistd.h>
+ #include <sys/time.h>
+ #include <sys/resource.h>
+--- SpiralSynthModular.C~	2004-03-20 10:52:38.000000000 +0100
++++ SpiralSynthModular.C	2008-12-14 13:55:36.000000000 +0100
+@@ -27,9 +27,9 @@
+ 
+ #include <FL/Fl.H>
+ #include <FL/Enumerations.H>
+-#include <FL/fl_file_chooser.h>
+-#include <FL/Fl_Box.h>
+-#include <FL/Fl_Tooltip.h>
++#include <FL/Fl_File_Chooser.H>
++#include <FL/Fl_Box.H>
++#include <FL/Fl_Tooltip.H>
+ 
+ #include "SpiralSynthModular.h"
+ #include "SpiralSound/PluginManager.h"
+--- SpiralSound/PluginManager.h~	2003-01-19 02:25:51.000000000 +0100
++++ SpiralSound/PluginManager.h	2008-12-14 13:56:33.000000000 +0100
+@@ -16,8 +16,8 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ */ 
+ 
+-#include <FL/Fl_Double_Window.h>
+-#include <FL/Fl_Pixmap.h>
++#include <FL/Fl_Double_Window.H>
++#include <FL/Fl_Pixmap.H>
+ #include <iostream>
+ #include <vector>
+ #include "Plugins/SpiralPlugin.h"
+--- SpiralSound/SpiralInfo.C~	2003-08-16 08:16:08.000000000 +0200
++++ SpiralSound/SpiralInfo.C	2008-12-14 13:58:01.000000000 +0100
+@@ -19,8 +19,8 @@
+ #include <iostream>
+ #include <fstream>
+ #include <stdlib.h>
+-#include "FL/fl_draw.h"
+-#include "FL/fl_message.h"
++#include <FL/fl_draw.H>
++#include <FL/fl_message.H>
+ #include "SpiralInfo.h"
+ #include "../SpiralSynthPluginLocation.h"
+ 
+--- SpiralSound/Plugins/SpiralPluginGUI.C~	2004-02-07 16:18:56.000000000 +0100
++++ SpiralSound/Plugins/SpiralPluginGUI.C	2008-12-14 14:00:33.000000000 +0100
+@@ -19,11 +19,11 @@
+ #include "SpiralPluginGUI.h"
+ #include "SpiralPlugin.h"
+ #include "../SpiralInfo.h"
+-#include <FL/fl_draw.h>
+ #include <FL/fl_draw.H>
+-#include <FL/Fl_Multiline_Output.h>
+-#include <FL/Fl_Text_Display.h>
+-#include <FL/Fl_Text_Buffer.h>
++#include <FL/fl_draw.H>
++#include <FL/Fl_Multiline_Output.H>
++#include <FL/Fl_Text_Display.H>
++#include <FL/Fl_Text_Buffer.H>
+ 
+ using namespace std;
+ 
+--- SpiralSound/Plugins/FormantFilterPlugin/FormantFilterPluginGUI.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/FormantFilterPlugin/FormantFilterPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "FormantFilterPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/FormantFilterPlugin/FormantFilterPlugin.C.fltk	2004-01-03 14:09:43.000000000 +0100
++++ SpiralSound/Plugins/FormantFilterPlugin/FormantFilterPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "FormantFilterPlugin.h"
+ #include "FormantFilterPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/EchoPlugin/EchoPluginGUI.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/EchoPlugin/EchoPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "EchoPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/EchoPlugin/EchoPlugin.C.fltk	2003-08-08 19:04:47.000000000 +0200
++++ SpiralSound/Plugins/EchoPlugin/EchoPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "EchoPlugin.h"
+ #include "EchoPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/MixSwitchPlugin/MixSwitchPluginGUI.C.fltk	2003-12-01 19:48:27.000000000 +0100
++++ SpiralSound/Plugins/MixSwitchPlugin/MixSwitchPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "MixSwitchPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/MixSwitchPlugin/MixSwitchPlugin.C.fltk	2003-10-09 20:46:14.000000000 +0200
++++ SpiralSound/Plugins/MixSwitchPlugin/MixSwitchPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "MixSwitchPlugin.h"
+ #include "MixSwitchPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include <stdio.h>
+ #include "SpiralIcon.xpm"
+--- SpiralSound/Plugins/JackPlugin/JackPluginGUI.C.fltk	2004-01-31 14:04:03.000000000 +0100
++++ SpiralSound/Plugins/JackPlugin/JackPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "JackPlugin.h"
+ #include "JackPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_file_chooser.H>
+ #include <FL/Fl_Hold_Browser.H>
+--- SpiralSound/Plugins/WaveTablePlugin/WaveTablePlugin.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/WaveTablePlugin/WaveTablePlugin.C	2008-12-14 15:18:35.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "WaveTablePlugin.h"
+ #include "WaveTablePluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/WaveTablePlugin/WaveTablePluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/WaveTablePlugin/WaveTablePluginGUI.C	2008-12-14 15:18:35.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "WaveTablePluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ #include "../GUI/WS_Square.h"
+--- SpiralSound/Plugins/RingModPlugin/RingModPlugin.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/RingModPlugin/RingModPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "RingModPlugin.h"
+ #include "RingModPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/RingModPlugin/RingModPluginGUI.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/RingModPlugin/RingModPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "RingModPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/TrigPlugin/TrigPluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/TrigPlugin/TrigPluginGUI.C	2008-12-14 15:18:35.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "TrigPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ #include <stdio.h>
+--- SpiralSound/Plugins/TrigPlugin/TrigPlugin.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/TrigPlugin/TrigPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "TrigPlugin.h"
+ #include "TrigPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/MatrixPlugin/MatrixPluginGUI.C.fltk	2004-01-19 21:47:18.000000000 +0100
++++ SpiralSound/Plugins/MatrixPlugin/MatrixPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,7 +18,7 @@
+ 
+ #include "MatrixPluginGUI.h"
+-#include <FL/fl_draw.h>
+ #include <FL/fl_draw.H>
+-//#include <FL/fl_file_chooser.h>
++#include <FL/fl_draw.H>
++//#include <FL/Fl_File_Chooser.H>
+ 
+ using namespace std;
+--- SpiralSound/Plugins/MatrixPlugin/MatrixPlugin.C.fltk	2004-01-19 21:47:18.000000000 +0100
++++ SpiralSound/Plugins/MatrixPlugin/MatrixPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "MatrixPlugin.h"
+ #include "MatrixPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/MixerPlugin/MixerPlugin.C.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/MixerPlugin/MixerPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -20,5 +20,5 @@
+ #include "MixerPlugin.h"
+ #include "MixerPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/MixerPlugin/MixerPluginGUI.C.fltk	2003-12-01 19:48:27.000000000 +0100
++++ SpiralSound/Plugins/MixerPlugin/MixerPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "MixerPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/LogicPlugin/LogicPlugin.C.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/LogicPlugin/LogicPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "LogicPlugin.h"
+ #include "LogicPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/LogicPlugin/LogicPluginGUI.C.fltk	2003-12-01 19:48:27.000000000 +0100
++++ SpiralSound/Plugins/LogicPlugin/LogicPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "LogicPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ #include <stdio.h>
+--- SpiralSound/Plugins/OperatorPlugin/OperatorPlugin.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/OperatorPlugin/OperatorPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "OperatorPlugin.h"
+ #include "OperatorPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/OperatorPlugin/OperatorPluginGUI.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/OperatorPlugin/OperatorPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "OperatorPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ //#include <stdio.h>
+--- SpiralSound/Plugins/CounterPlugin/CounterPlugin.C.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/CounterPlugin/CounterPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "CounterPlugin.h"
+ #include "CounterPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/NoisePlugin/NoisePluginGUI.C.fltk	2003-08-11 19:33:01.000000000 +0200
++++ SpiralSound/Plugins/NoisePlugin/NoisePluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "NoisePluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/NoisePlugin/NoisePlugin.C.fltk	2008-12-14 15:18:34.000000000 +0100
++++ SpiralSound/Plugins/NoisePlugin/NoisePlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "NoisePlugin.h"
+ #include "NoisePluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include <limits.h>
+ #include "SpiralIcon.xpm"
+--- SpiralSound/Plugins/OscillatorPlugin/OscillatorPluginGUI.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/OscillatorPlugin/OscillatorPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "OscillatorPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ #include "../GUI/WS_Square.h"
+--- SpiralSound/Plugins/OscillatorPlugin/OscillatorPlugin.C.fltk	2008-12-14 15:18:34.000000000 +0100
++++ SpiralSound/Plugins/OscillatorPlugin/OscillatorPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "OscillatorPlugin.h"
+ #include "OscillatorPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include <limits.h>
+ #include "SpiralIcon.xpm"
+--- SpiralSound/Plugins/OscillatorPlugin/OscillatorPluginGUI.h.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/OscillatorPlugin/OscillatorPluginGUI.h	2008-12-14 15:18:35.000000000 +0100
+@@ -23,7 +23,7 @@
+ #include <FL/Fl_Slider.H>
+ #include <FL/Fl_Counter.H>
+-#include <FL/Fl_Tabs.h>
+-#include <FL/Fl_Group.h>
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Tabs.H>
++#include <FL/Fl_Group.H>
++#include <FL/Fl_Button.H>
+ #include "../Widgets/Fl_LED_Button.H"
+ #include "../Widgets/Fl_Knob.H"
+--- SpiralSound/Plugins/PoshSamplerPlugin/PoshSamplerPluginGUI.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/PoshSamplerPlugin/PoshSamplerPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,7 +18,7 @@
+ 
+ #include "PoshSamplerPluginGUI.h"
+-#include <FL/fl_draw.h>
+ #include <FL/fl_draw.H>
+-#include <FL/fl_file_chooser.h>
++#include <FL/fl_draw.H>
++#include <FL/Fl_File_Chooser.H>
+ 
+ using namespace std;
+--- SpiralSound/Plugins/PoshSamplerPlugin/PoshSamplerPlugin.C.fltk	2003-12-12 04:16:15.000000000 +0100
++++ SpiralSound/Plugins/PoshSamplerPlugin/PoshSamplerPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "PoshSamplerPlugin.h"
+ #include "PoshSamplerPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/ScopePlugin/ScopePluginGUI.C.fltk	2004-02-14 09:42:36.000000000 +0100
++++ SpiralSound/Plugins/ScopePlugin/ScopePluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "ScopePluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/ScopePlugin/ScopePlugin.C.fltk	2004-02-14 09:42:36.000000000 +0100
++++ SpiralSound/Plugins/ScopePlugin/ScopePlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "ScopePlugin.h"
+ #include "ScopePluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/SwitchPlugin/SwitchPlugin.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/SwitchPlugin/SwitchPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "SwitchPlugin.h"
+ #include "SwitchPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/SwitchPlugin/SwitchPluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/SwitchPlugin/SwitchPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "SwitchPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/MoogFilterPlugin/MoogFilterPluginGUI.C.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/MoogFilterPlugin/MoogFilterPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "MoogFilterPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/MoogFilterPlugin/MoogFilterPlugin.C.fltk	2003-11-13 02:16:52.000000000 +0100
++++ SpiralSound/Plugins/MoogFilterPlugin/MoogFilterPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "MoogFilterPlugin.h"
+ #include "MoogFilterPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/StereoMixerPlugin/StereoMixerPluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/StereoMixerPlugin/StereoMixerPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "StereoMixerPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/StereoMixerPlugin/StereoMixerPlugin.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/StereoMixerPlugin/StereoMixerPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "StereoMixerPlugin.h"
+ #include "StereoMixerPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/MidiPlugin/MidiPlugin.C.fltk	2003-12-01 19:48:27.000000000 +0100
++++ SpiralSound/Plugins/MidiPlugin/MidiPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "MidiPlugin.h"
+ #include "MidiPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "../../NoteTable.h"
+ #include "../../Midi.h"
+--- SpiralSound/Plugins/MidiPlugin/MidiPluginGUI.C.fltk	2004-01-28 18:19:01.000000000 +0100
++++ SpiralSound/Plugins/MidiPlugin/MidiPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,6 +18,6 @@
+ 
+ #include "MidiPluginGUI.h"
+-#include <FL/fl_draw.h>
+-#include <FL/fl_file_chooser.H>
++#include <FL/fl_draw.H>
++#include <FL/Fl_File_Chooser.H>
+ #include <FL/Fl_Hold_Browser.H>
+ #include <FL/Fl_Double_Window.H>
+--- SpiralSound/Plugins/DelayPlugin/DelayPluginGUI.C.fltk	2003-08-08 19:04:47.000000000 +0200
++++ SpiralSound/Plugins/DelayPlugin/DelayPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "DelayPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/DelayPlugin/DelayPlugin.C.fltk	2003-10-12 19:05:31.000000000 +0200
++++ SpiralSound/Plugins/DelayPlugin/DelayPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "DelayPlugin.h"
+ #include "DelayPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/SampleHoldPlugin/SampleHoldPlugin.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/SampleHoldPlugin/SampleHoldPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "SampleHoldPlugin.h"
+ #include "SampleHoldPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/SampleHoldPlugin/SampleHoldPluginGUI.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/SampleHoldPlugin/SampleHoldPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "SampleHoldPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/SplitSwitchPlugin/SplitSwitchPlugin.C.fltk	2003-10-09 20:46:14.000000000 +0200
++++ SpiralSound/Plugins/SplitSwitchPlugin/SplitSwitchPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "SplitSwitchPlugin.h"
+ #include "SplitSwitchPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include <stdio.h>
+ #include "SpiralIcon.xpm"
+--- SpiralSound/Plugins/SplitSwitchPlugin/SplitSwitchPluginGUI.C.fltk	2003-12-01 19:48:27.000000000 +0100
++++ SpiralSound/Plugins/SplitSwitchPlugin/SplitSwitchPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "SplitSwitchPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/KeyboardPlugin/KeyboardPluginGUI.C.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/KeyboardPlugin/KeyboardPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,6 +18,6 @@
+ 
+ #include "KeyboardPluginGUI.h"
+-#include <FL/fl_draw.h>
+-#include <FL/fl_file_chooser.H>
++#include <FL/fl_draw.H>
++#include <FL/Fl_File_Chooser.H>
+ #include <FL/Fl_Hold_Browser.H>
+ #include <FL/Fl_Double_Window.H>
+--- SpiralSound/Plugins/LFOPlugin/LFOPlugin.C.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/LFOPlugin/LFOPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "LFOPlugin.h"
+ #include "LFOPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/LFOPlugin/LFOPluginGUI.C.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/LFOPlugin/LFOPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "LFOPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ #include "../GUI/WS_Sine.h"
+--- SpiralSound/Plugins/DiskWriterPlugin/DiskWriterPlugin.C.fltk	2004-02-07 16:18:57.000000000 +0100
++++ SpiralSound/Plugins/DiskWriterPlugin/DiskWriterPlugin.C	2008-12-14 15:18:35.000000000 +0100
+@@ -29,5 +29,5 @@
+ #include "DiskWriterPlugin.h"
+ #include "DiskWriterPluginGUI.h"
+-#include <FL/fl_file_chooser.H>
++#include <FL/Fl_File_Chooser.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/DiskWriterPlugin/DiskWriterPluginGUI.C.fltk	2004-01-31 14:02:53.000000000 +0100
++++ SpiralSound/Plugins/DiskWriterPlugin/DiskWriterPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,6 +18,6 @@
+ 
+ #include "DiskWriterPluginGUI.h"
+-#include <FL/fl_draw.h>
+-#include <FL/fl_file_chooser.H>
++#include <FL/fl_draw.H>
++#include <FL/Fl_File_Chooser.H>
+ 
+ using namespace std;
+--- SpiralSound/Plugins/SmoothPlugin/SmoothPluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/SmoothPlugin/SmoothPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "SmoothPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/SmoothPlugin/SmoothPlugin.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/SmoothPlugin/SmoothPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "SmoothPlugin.h"
+ #include "SmoothPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/XFadePlugin/XFadePluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/XFadePlugin/XFadePluginGUI.C	2008-12-14 15:18:35.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "XFadePluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/XFadePlugin/XFadePlugin.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/XFadePlugin/XFadePlugin.C	2008-12-14 15:18:35.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "XFadePlugin.h"
+ #include "XFadePluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/ControllerPlugin/ControllerPluginGUI.C.fltk	2003-12-01 19:48:27.000000000 +0100
++++ SpiralSound/Plugins/ControllerPlugin/ControllerPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include <stdio.h>
+ #include "ControllerPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/ControllerPlugin/ControllerPlugin.C.fltk	2003-08-08 19:04:47.000000000 +0200
++++ SpiralSound/Plugins/ControllerPlugin/ControllerPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -20,5 +20,5 @@
+ #include "ControllerPlugin.h"
+ #include "ControllerPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/SpiralLoopPlugin/SpiralLoopPluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/SpiralLoopPlugin/SpiralLoopPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,7 +18,7 @@
+ 
+ #include "SpiralLoopPluginGUI.h"
+-#include <FL/fl_draw.h>
+ #include <FL/fl_draw.H>
+-#include <FL/fl_file_chooser.h>
++#include <FL/fl_draw.H>
++#include <FL/Fl_File_Chooser.H>
+ 
+ using namespace std;
+--- SpiralSound/Plugins/SpiralLoopPlugin/SpiralLoopPlugin.C.fltk	2003-12-12 04:16:16.000000000 +0100
++++ SpiralSound/Plugins/SpiralLoopPlugin/SpiralLoopPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "SpiralLoopPlugin.h"
+ #include "SpiralLoopPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/EnvelopePlugin/EnvelopePluginGUI.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/EnvelopePlugin/EnvelopePluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "EnvelopePluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/EnvelopePlugin/EnvelopePlugin.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/EnvelopePlugin/EnvelopePlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "EnvelopePlugin.h"
+ #include "EnvelopePluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/TransposePlugin/TransposePluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/TransposePlugin/TransposePluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "TransposePluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ 
+ using namespace std;
+--- SpiralSound/Plugins/FlipflopPlugin/FlipflopPlugin.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/FlipflopPlugin/FlipflopPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "FlipflopPlugin.h"
+ #include "FlipflopPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/FlipflopPlugin/FlipflopPluginGUI.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/FlipflopPlugin/FlipflopPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "FlipflopPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/AmpPlugin/AmpPlugin.h.fltk	2004-02-14 09:42:32.000000000 +0100
++++ SpiralSound/Plugins/AmpPlugin/AmpPlugin.h	2008-12-14 15:18:34.000000000 +0100
+@@ -21,5 +21,5 @@
+ 
+ #include "../SpiralPlugin.h"
+-#include <FL/Fl.h>
++#include <FL/Fl.H>
+ 
+ class AmpPlugin : public SpiralPlugin
+--- SpiralSound/Plugins/AmpPlugin/AmpPluginGUI.C.fltk	2004-02-14 09:42:32.000000000 +0100
++++ SpiralSound/Plugins/AmpPlugin/AmpPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -17,5 +17,4 @@
+ */
+ 
+-#include <FL/fl_draw.h>
+ #include <FL/fl_draw.H>
+ #include "AmpPluginGUI.h"
+--- SpiralSound/Plugins/AmpPlugin/AmpPlugin.C.fltk	2004-02-14 09:42:32.000000000 +0100
++++ SpiralSound/Plugins/AmpPlugin/AmpPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "AmpPlugin.h"
+ #include "AmpPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/DistributorPlugin/DistributorPluginGUI.C.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/DistributorPlugin/DistributorPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "DistributorPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/DistributorPlugin/DistributorPlugin.C.fltk	2003-11-22 21:40:14.000000000 +0100
++++ SpiralSound/Plugins/DistributorPlugin/DistributorPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "DistributorPlugin.h"
+ #include "DistributorPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/AnotherFilterPlugin/AnotherFilterPluginGUI.C.fltk	2003-08-08 19:04:47.000000000 +0200
++++ SpiralSound/Plugins/AnotherFilterPlugin/AnotherFilterPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,4 @@
+ 
+ #include "AnotherFilterPluginGUI.h"
+-#include <FL/fl_draw.h>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/AnotherFilterPlugin/AnotherFilterPlugin.C.fltk	2003-08-08 19:04:47.000000000 +0200
++++ SpiralSound/Plugins/AnotherFilterPlugin/AnotherFilterPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include "AnotherFilterPlugin.h"
+ #include "AnotherFilterPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/StreamPlugin/StreamPlugin.C.fltk	2003-12-12 04:16:16.000000000 +0100
++++ SpiralSound/Plugins/StreamPlugin/StreamPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "StreamPlugin.h"
+ #include "StreamPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/StreamPlugin/StreamPluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/StreamPlugin/StreamPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,7 +18,7 @@
+ 
+ #include "StreamPluginGUI.h"
+-#include <FL/fl_draw.h>
+ #include <FL/fl_draw.H>
+-#include <FL/fl_file_chooser.h>
++#include <FL/fl_draw.H>
++#include <FL/Fl_File_Chooser.H>
+ 
+ using namespace std;
+--- SpiralSound/Plugins/SeqSelectorPlugin/SeqSelectorPluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/SeqSelectorPlugin/SeqSelectorPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -19,5 +19,5 @@
+ #include <stdio.h>
+ #include "SeqSelectorPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ #include <FL/Fl_Box.H>
+--- SpiralSound/Plugins/SeqSelectorPlugin/SeqSelectorPlugin.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/SeqSelectorPlugin/SeqSelectorPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "SeqSelectorPlugin.h"
+ #include "SeqSelectorPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/WaveShaperPlugin/WaveShaperPluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/WaveShaperPlugin/WaveShaperPluginGUI.C	2008-12-14 15:18:35.000000000 +0100
+@@ -19,5 +19,5 @@
+ 
+ #include "WaveShaperPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ #include <FL/Fl_Box.H>
+--- SpiralSound/Plugins/MasherPlugin/MasherPluginGUI.C.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/MasherPlugin/MasherPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "MasherPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/MasherPlugin/MasherPlugin.h.fltk	2003-08-08 19:55:50.000000000 +0200
++++ SpiralSound/Plugins/MasherPlugin/MasherPlugin.h	2008-12-14 15:18:35.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "../SpiralPlugin.h"
+-#include <FL/Fl.h>
++#include <FL/Fl.H>
+ 
+ #ifndef MasherPLUGIN
+--- SpiralSound/Plugins/MasherPlugin/MasherPlugin.C.fltk	2008-12-14 15:18:34.000000000 +0100
++++ SpiralSound/Plugins/MasherPlugin/MasherPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -20,5 +20,5 @@
+ #include "MasherPlugin.h"
+ #include "MasherPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/SplitterPlugin/SplitterPluginGUI.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/SplitterPlugin/SplitterPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "SplitterPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/SplitterPlugin/SplitterPlugin.C.fltk	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/SplitterPlugin/SplitterPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "SplitterPlugin.h"
+ #include "SplitterPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/SVFilterPlugin/SVFilterPluginGUI.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/SVFilterPlugin/SVFilterPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "SVFilterPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/FilterPlugin/FilterPlugin.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/FilterPlugin/FilterPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "FilterPlugin.h"
+ #include "FilterPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/FilterPlugin/FilterPluginGUI.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/FilterPlugin/FilterPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "FilterPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/NoteSnapPlugin/NoteSnapPlugin.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/NoteSnapPlugin/NoteSnapPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "NoteSnapPlugin.h"
+ #include "NoteSnapPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/NoteSnapPlugin/NoteSnapPluginGUI.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/NoteSnapPlugin/NoteSnapPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "NoteSnapPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/EnvFollowerPlugin/EnvFollowerPlugin.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/EnvFollowerPlugin/EnvFollowerPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "EnvFollowerPlugin.h"
+ #include "EnvFollowerPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/EnvFollowerPlugin/EnvFollowerPluginGUI.C.fltk	2003-08-08 19:04:48.000000000 +0200
++++ SpiralSound/Plugins/EnvFollowerPlugin/EnvFollowerPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "EnvFollowerPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/BeatMatchPlugin/BeatMatchPlugin.C.fltk	2003-08-08 19:55:49.000000000 +0200
++++ SpiralSound/Plugins/BeatMatchPlugin/BeatMatchPlugin.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ #include "BeatMatchPlugin.h"
+ #include "BeatMatchPluginGUI.h"
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Button.H>
+ #include "SpiralIcon.xpm"
+ #include "../../NoteTable.h"
+--- SpiralSound/Plugins/BeatMatchPlugin/BeatMatchPluginGUI.C.fltk	2003-08-08 19:55:49.000000000 +0200
++++ SpiralSound/Plugins/BeatMatchPlugin/BeatMatchPluginGUI.C	2008-12-14 15:18:34.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "BeatMatchPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ 
+--- SpiralSound/Plugins/CounterPlugin/CounterPluginGUI.C~	2008-12-14 15:31:34.000000000 +0100
++++ SpiralSound/Plugins/CounterPlugin/CounterPluginGUI.C	2008-12-14 15:34:08.000000000 +0100
+@@ -18,5 +18,5 @@
+ 
+ #include "CounterPluginGUI.h"
+-#include <FL/fl_draw.h>
++#include <FL/fl_draw.H>
+ #include <FL/fl_draw.H>
+ #include <stdio.h>
+--- SpiralSound/Plugins/OutputPlugin/OutputPlugin.C~	2004-02-08 19:36:17.000000000 +0100
++++ SpiralSound/Plugins/OutputPlugin/OutputPlugin.C	2008-12-14 15:35:45.000000000 +0100
+@@ -42,5 +42,5 @@
+ #include "OutputPlugin.h"
+ #include "OutputPluginGUI.h"
+-#include <FL/fl_file_chooser.H>
++#include <FL/Fl_File_Chooser.H>
+ #include "SpiralIcon.xpm"
+ 
+--- SpiralSound/Plugins/OutputPlugin/OutputPluginGUI.C.fltk	2003-08-08 19:55:51.000000000 +0200
++++ SpiralSound/Plugins/OutputPlugin/OutputPluginGUI.C	2008-12-14 15:37:35.000000000 +0100
+@@ -17,8 +17,8 @@
+ */
+ 
+ #include "OutputPluginGUI.h"
+-#include <FL/fl_draw.h>
+-#include <FL/fl_file_chooser.H>
++#include <FL/fl_draw.H>
++#include <FL/Fl_File_Chooser.H>
+ 
+ using namespace std;
+ 
+--- SpiralSound/Plugins/WaveTablePlugin/WaveTablePluginGUI.h~	2003-08-08 19:55:52.000000000 +0200
++++ SpiralSound/Plugins/WaveTablePlugin/WaveTablePluginGUI.h	2008-12-14 15:41:31.000000000 +0100
+@@ -21,9 +21,9 @@
+ 
+ #include <FL/Fl_Pixmap.H>
+ #include <FL/Fl_Counter.H>
+-#include <FL/Fl_Tabs.h>
+-#include <FL/Fl_Group.h>
+-#include <FL/Fl_Button.h>
++#include <FL/Fl_Tabs.H>
++#include <FL/Fl_Group.H>
++#include <FL/Fl_Button.H>
+ #include "../Widgets/Fl_LED_Button.H"
+ #include "../Widgets/Fl_Knob.H"
+ #include "../SpiralPluginGUI.h"

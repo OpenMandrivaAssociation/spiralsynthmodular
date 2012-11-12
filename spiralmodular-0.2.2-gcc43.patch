@@ -1,0 +1,75 @@
+--- main.cpp~	2008-12-14 13:48:19.000000000 +0100
++++ main.cpp	2008-12-14 13:53:26.000000000 +0100
+@@ -27,6 +27,7 @@
+ #include <unistd.h>
+ #include <sys/time.h>
+ #include <sys/resource.h>
++#include <cstring>
+ 
+ #include "SpiralSynthModular.h"
+ #include "SpiralSound/SpiralInfo.h"
+--- SpiralSound/Sample.h~	2008-12-14 13:18:41.000000000 +0100
++++ SpiralSound/Sample.h	2008-12-14 13:53:53.000000000 +0100
+@@ -24,6 +24,7 @@
+ #include <assert.h>
+ #include <limits.h>
+ #include <iostream>
++#include <cstring>
+ 
+ //#define DEBUG
+ 
+--- SpiralSound/ChannelHandler.C~	2003-02-21 01:51:15.000000000 +0100
++++ SpiralSound/ChannelHandler.C	2008-12-14 13:59:33.000000000 +0100
+@@ -18,6 +18,8 @@
+ 
+ #include "ChannelHandler.h"
+ #include <unistd.h>
++#include <cstdlib>
++#include <cstring>
+ 
+ using namespace std;
+ 
+--- SpiralSound/Plugins/CounterPlugin/CounterPluginGUI.C~	2008-12-14 14:46:43.000000000 +0100
++++ SpiralSound/Plugins/CounterPlugin/CounterPluginGUI.C	2008-12-14 14:51:51.000000000 +0100
+@@ -21,4 +21,5 @@
+ #include <FL/fl_draw.H>
+ #include <stdio.h>
++#include <cstdlib>
+
+ using namespace std;
+--- SpiralSound/Plugins/LADSPAPlugin/LADSPAInfo.C~	2003-08-08 19:58:26.000000000 +0200
++++ SpiralSound/Plugins/LADSPAPlugin/LADSPAInfo.C	2008-12-14 14:59:56.000000000 +0100
+@@ -28,6 +28,7 @@
+ #include <sstream>
+ #include <algorithm>
+ #include <stdio.h>
++#include <cstring>
+ 
+ #include <cstdlib>
+ #include <sys/types.h>
+--- SpiralSound/Plugins/MasherPlugin/MasherPlugin.C~	2008-12-14 14:46:47.000000000 +0100
++++ SpiralSound/Plugins/MasherPlugin/MasherPlugin.C	2008-12-14 15:03:08.000000000 +0100
+@@ -15,6 +15,7 @@
+  *  along with this program; if not, write to the Free Software
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ */
++#include <cstdlib>
+ #include <math.h>
+ #include "MasherPlugin.h"
+ #include "MasherPluginGUI.h"
+--- SpiralSound/Plugins/NoisePlugin/NoisePlugin.C~	2008-12-14 14:46:49.000000000 +0100
++++ SpiralSound/Plugins/NoisePlugin/NoisePlugin.C	2008-12-14 15:07:58.000000000 +0100
+@@ -16,4 +16,5 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ */
++#include <cstdlib>
+ #include "NoisePlugin.h"
+ #include "NoisePluginGUI.h"
+--- SpiralSound/Plugins/OscillatorPlugin/OscillatorPlugin.C~	2008-12-14 14:46:50.000000000 +0100
++++ SpiralSound/Plugins/OscillatorPlugin/OscillatorPlugin.C	2008-12-14 15:10:22.000000000 +0100
+@@ -16,4 +16,5 @@
+  *  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+ */
++#include <cstdlib>
+ #include "OscillatorPlugin.h"
+ #include "OscillatorPluginGUI.h"
