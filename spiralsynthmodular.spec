@@ -15,6 +15,11 @@ Patch2:     spiralmodular-0.2.2-newer-fltk.patch
 License:    GPL
 Group:      Sound
 BuildRoot:  %{_tmppath}/%{name}-root
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:  fltk-devel jackit-devel python-base
 BuildRequires:  ladspa-devel libalsa-devel sndfile-devel
 BuildRequires:  pkgconfig(cairo)
